@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Address Book App</title>
     <link rel="stylesheet" href="../css/address_book_form.css">
+    <title>Address Book Form</title>
 </head>
 <body>
     <!-- header -->
@@ -18,33 +18,58 @@
             </div>
         </div>
     </header>
+    
+    <!-- Address Form -->
+    
+    <!-- <div class="form-content"> -->
 
-    <div class="form-heading">
-        <h1>PERSON ADDRESS FORM
-        <a href="../pages/home_page.html" >
-            <img src="../assets/images/cancel.jpeg" alt=""></a>
-        </h1>
-    </div>
-    <div class="form-content">
-        <form action="#">
+        <!-- heading -->
+        <header>
+            <div class="form-head">PERSON ADDRESS BOOK
+                <a href="../pages/home_page.html" class="cancel-button">
+                    <img src="../assets/images/cancel.jpeg" alt=""></a>
+            </div>
+
+        </header>
+    
+
+        <div class="form-content">
+            <form class="form" action="#">
+                <!-- Full Name -->
+                <div class="row-content">
+                    <label class="label text" for="name">Full Name</label>
+                </div>
+                <div><input type="text" class="input" id="name" name="name" required></div>
+
+            </form>
+        </div>
+    <!-- </div> -->
+        
+
+        
+            
+            
+
             <!-- Full Name -->
-            <div class="row-content">
+            <!-- <div class="row-content">
                 <label class="label text" for="name">Full Name</label>
             </div>
-            <div><input type="text" class="input" id="name" name="name" required></div>
+            <div><input type="text" class="input" id="name" name="name" required></div> -->
+
             <!-- Phone Number -->
-            <div class="row-content">
+            <!-- <div class="row-content">
                 <label class="label text" for="phonenumber">Phone Number</label>
             </div>
-            <div><input type="text" class="input" id="phonenumber" name="phonenumber" required></div>
-             <!-- Address -->
-            <div class="row-content">
+            <div><input type="text" class="input" id="phonenumber" name="phonenumber" required></div> -->
+
+            <!-- Address -->
+            <!-- <div class="row-content">
                 <label class="label text" for="address">Address</label>
             </div>
-            <div><input type="text" class="input" id="address" name="address" required style="height: 100px;"></div>
+            <div><input type="text" class="input" id="address" name="address" required style="height: 100px;"></div> -->
 
             <!-- City, State, ZipCode -->
-            <div>
+            <!-- <div>
                 <div class="row-content">
                     <label for="city" class="label text">City</label>
                     <label for="state" class="label text">State</label>
@@ -63,29 +88,17 @@
                     <option value="Uttar Pradesh">Uttar Pradesh</option>
                 </select>
                 <input type="text" class="inputbox" id="zipcode" name="zipcode" required>
-            </div> 
+            </div> -->
 
-            <div class="buttonParent">
+            <!-- <div class="buttonParent">
                 <button type="submit" class="button addButton" id="addbutton">Add</button>
                 <button type="reset" class="button resetButton">Reset</button>
         
             </div>
-            <!-- <div class="add-reset">
-               
-            </div> -->
-
-
-        </form>
+            <div class="add-reset">
+                -->
+            <!-- </div>
+        </form> -->
     </div>
-    <!-- <div class="main">
-        <form>
-            <div id="name">
-                <h2 class="name">Name</h2>
-                <input class="firstname" type="text" name="first_name"><br>
-                <label class="label">First Name</label>
-
-            </div>
-        </form>
-    </div> -->
 </body>
 </html>
