@@ -49,9 +49,22 @@ const save = () => {
     try{
         let addressBookData = addPerson();
         console.log(addressBookData);
+        createAndUpdateStorage(addressBookData);
     } catch (e){
         return;
     }
+}
+
+function createAndUpdateStorage(addressBookData){
+    let personContactList = JSON.parse(localStorage.getItem("PersonContactList"));
+
+    if(personContactList != undefined){
+        personContactList.push(addressBookData);
+    } else {
+        personContactList = [addressBookData]
+    }
+    alert(personContactList.toString());
+    localStorage.setItem("PersonContactList", JSON.stringify(personContactList));
 }
 
 const addPerson = () => {
