@@ -122,6 +122,14 @@ th {
     height: 20px;
 }
 
+td img:first-child {
+    margin-right: 10px;
+}
+
+td img {
+    cursor: pointer;
+}
+
 tr:not(:first-child) {
     background: #ffffff 0% 0% no-repeat padding-box;
     border: 2px solid #e3e3e3;
