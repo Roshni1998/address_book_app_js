@@ -101,4 +101,23 @@ const addPerson = () => {
 const getInputValueById = (id) => {
     let value = document.querySelector(id).value;
     return value;
-  }
+}
+
+const resetForm = () => {
+    setValue('#fullName', '');
+    setValue('#phonenumber', '');
+    setValue('#address', '');
+    setValue('#city', '');
+    setValue('#state', '');
+    setValue('#zipcode', '');
+}
+
+const setTextValue = (id, value) => {
+    const element = document.querySelector(id);
+    element.textContent = value;
+}
+
+const setValue =  (id, value) => {
+  const element = document.querySelector(id);
+  element.value = value;
+}
