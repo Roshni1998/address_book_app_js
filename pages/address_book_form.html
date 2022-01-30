@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Address Book App</title>
     <link rel="stylesheet" href="../css/address_book_form.css">
+    <script defer src="../js/AddressBook.js"></script>
+    <script defer src="../js/address_book_form.js"></script>
 </head>
 <body>
     <!-- header -->
@@ -33,15 +35,19 @@
 
             <!-- Full Name -->
             <div class="row-content">
-                <label class="label text" for="name">Full Name</label>
+                <label class="label text" for="fullName">Full Name</label>
             </div>
-            <div><input type="text" class="input" id="name" name="name" required></div>
+            <div><input type="text" class="input" id="fullName" name="fullName" required>
+                <error-output class="text-error" for="text"></error-output>
+            </div>
 
             <!-- Phone Number -->
             <div class="row-content">
                 <label class="label text" for="phonenumber">Phone Number</label>
             </div>
-            <div><input type="text" class="input" id="phonenumber" name="phonenumber" required></div>
+            <div><input type="text" class="input" id="phonenumber" name="phonenumber" required>
+                <error-output class="phone-Error" for="text"></error-output>
+            </div>
 
              <!-- Address -->
             <div class="row-content">
@@ -69,6 +75,7 @@
                     <option value="Uttar Pradesh">Uttar Pradesh</option>
                 </select>
                 <input type="text" class="inputbox" id="zipcode" name="zipcode" required>
+                <error-output class="zipcode-error" for="text"></error-output>
             </div> 
 
             <!-- Add and Reset Button -->
