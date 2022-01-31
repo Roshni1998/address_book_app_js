@@ -35,3 +35,23 @@ const createInnerHtml = () => {
     }
     document.querySelector('#table-display').innerHTML = innerHtml;
 }
+
+const remove = (node) => {
+    let addressBookData = addressBookList.find(personData => personData._id == node._id);
+    if(!addressBookData) return;
+    const index = addressBookList
+                  .map(personData => personData.id)
+                  .indexOf(addressBookData._id);
+    console.log(index);
+    addressBookList.splice(index, 1);
+    localStorage.setItem("PersonContactList", JSON.stringify(addressBookList));
+    document.querySelector(".person-count").textContent = addressBookList.length;
+    createInnerHtml();
+}
+
+// const update = (node) => {
+//     let empPayrollData = empPayrollList.find(empData => empData._id == node._id)
+//     if(!empPayrollData) return;
+//     localStorage.setItem('editEmp', JSON.stringify(empPayrollData));
+//     window.location.replace(site_properties.add_emp_payroll_page);
+// }
